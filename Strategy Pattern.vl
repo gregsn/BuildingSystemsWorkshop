@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="EDD5kLnPBNHPnipp3jEXyT" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="Se19XP8b8lhPxWuDE1vxil" Location="VL.CoreLib" Version="2020.2.2" />
+  <Patch Id="Noq3ndIRpAGPa2VAQtZut9">
+    <Canvas Id="PKqP9gLuINGM8IFCcwTxt4" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ MyIntelligentObject ************************
+
+-->
+      <Node Name="MyIntelligentObject" Bounds="200,100" Id="GVBtkCHdWEyPLAwYkKxzBX">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="RHKXSFhIM5hLv5WXlxlzhL">
+          <Canvas Id="NpkTBjKccC9NEHtRnNrgp2" CanvasType="Group">
+            <!--
+
+    ************************ State1OfIntelligentObject ************************
+
+-->
+            <Node Name="State1OfIntelligentObject" Bounds="528,342" Id="DeTBNs5c5SXNcHZuHrBznY">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                <Choice Kind="ClassDefinition" Name="Class" />
+              </p:NodeReference>
+              <p:Interfaces>
+                <TypeReference>
+                  <Choice Kind="InterfaceTypeFlag" Name="IStateOfIntelligentObject" />
+                </TypeReference>
+              </p:Interfaces>
+              <Patch Id="BzwsdDJ7YBUQP92HEKkPAb">
+                <Canvas Id="NT6vY3WTtp9N5sjJYWQs7j" CanvasType="Group">
+                  <ControlPoint Id="NJnBEnBNBEGOOPl9KJ1FNc" Bounds="560,359" />
+                  <Pad Id="Enjct9A5gYhNw134Pqt4oM" Comment="Mode Name" Bounds="540,311,35,15" ShowValueBox="true" isIOBox="true" Value="Inital">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                </Canvas>
+                <ProcessDefinition Id="CVOa5Xl5LuJNo0q1LlutEA" IsHidden="true">
+                  <Fragment Id="HPbPxuCMw0zP2qtigCLwJF" Patch="IGCjZUYxizvNmBwiNo3fG6" Enabled="true" />
+                  <Fragment Id="AZNgwiGc82GLlPIY7fnCpP" Patch="Or4fHbyW3AfMfWsrKgXpTn" />
+                </ProcessDefinition>
+                <Patch Id="IGCjZUYxizvNmBwiNo3fG6" Name="Create" />
+                <Patch Id="Or4fHbyW3AfMfWsrKgXpTn" Name="Split">
+                  <Pin Id="A9aIN7pvdYSNkTJbD9QEMz" Name="Mode Name" Kind="OutputPin" />
+                </Patch>
+                <Link Id="AtC7GOWkfNmP1kaBUGXQsT" Ids="NJnBEnBNBEGOOPl9KJ1FNc,A9aIN7pvdYSNkTJbD9QEMz" IsHidden="true" />
+                <Link Id="BtdUc9BuePnLZnpjX5X27I" Ids="Enjct9A5gYhNw134Pqt4oM,NJnBEnBNBEGOOPl9KJ1FNc" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ State2OfIntelligentObject ************************
+
+-->
+            <Node Name="State2OfIntelligentObject" Bounds="533,438" Id="A25qrD4MI4cMF60Ex0gZHU">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                <Choice Kind="ClassDefinition" Name="Class" />
+              </p:NodeReference>
+              <p:Interfaces>
+                <TypeReference LastCategoryFullName="Main.MyIntelligentObject" LastSymbolSource="callmenames-2020-10-05.vl">
+                  <Choice Kind="InterfaceTypeFlag" Name="IStateOfIntelligentObject" />
+                </TypeReference>
+              </p:Interfaces>
+              <Patch Id="Mz96Aw8G6ofP0ony5qzNL4">
+                <Canvas Id="AgpJ2jldNMhQVwCUAMSEIL" CanvasType="Group">
+                  <ControlPoint Id="A9d23E6FU2sP6XcAIj79Y4" Bounds="533,370" />
+                  <ControlPoint Id="ByWkbqNdcWVLgWxGGIuO9B" Bounds="532,258" />
+                  <Pad Id="BNLxCICwFv2NIt6Nhix7f6" Bounds="533,309" />
+                </Canvas>
+                <Patch Id="ECdvktvB9OrNGstRTdaAvM" Name="Create">
+                  <Pin Id="G4pNm0rgNtCNy0X6I1OzZ0" Name="Mode Name" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                </Patch>
+                <ProcessDefinition Id="SGIFv8KAjNuM5f0qczn0T7" IsHidden="true">
+                  <Fragment Id="PliKJJPtzsvP4yAQPJJPn6" Patch="ECdvktvB9OrNGstRTdaAvM" Enabled="true" />
+                  <Fragment Id="NmzKwGeahi6N4mpbzl9Gzz" Patch="PeKJ8bkvpC5POjiGgx6yhc" />
+                </ProcessDefinition>
+                <Patch Id="PeKJ8bkvpC5POjiGgx6yhc" Name="Split">
+                  <Pin Id="DNe0TYwgTNcLKPjJYYjw3u" MergeId="616245" Name="Mode Name" Kind="OutputPin" />
+                </Patch>
+                <Link Id="MdguLuRfxaiLlYAkjzqDMs" Ids="A9d23E6FU2sP6XcAIj79Y4,DNe0TYwgTNcLKPjJYYjw3u" IsHidden="true" />
+                <Link Id="EjPOXhVXJHzPFMRAx0cSao" Ids="ByWkbqNdcWVLgWxGGIuO9B,BNLxCICwFv2NIt6Nhix7f6" />
+                <Link Id="RQo7n7IAu2hL78tinJsvOG" Ids="G4pNm0rgNtCNy0X6I1OzZ0,ByWkbqNdcWVLgWxGGIuO9B" IsHidden="true" />
+                <Link Id="QEEsoP4QnfQQc5ef1qQGAP" Ids="BNLxCICwFv2NIt6Nhix7f6,A9d23E6FU2sP6XcAIj79Y4" />
+              </Patch>
+            </Node>
+            <Pad Id="A73Kh6vnjpRMF91lQmWB1D" SlotId="NXZYG6h3VqqPMnLt0Rq0EA" Bounds="266,269" />
+            <Node Bounds="264,201,106,26" Id="AxBcCEwwAoXPK7fY8hYIq9">
+              <p:NodeReference>
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <CategoryReference Kind="ClassType" Name="State1OfIntelligentObject" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="NrcQjl8O4lAPG5vz5zULbV" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="251,352,146,120" Id="VSN1KlZQZasPxEycNJSCSw">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="M9Y8GA3e8JxMYo4IC1nXa2" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="BHyVBAs8306L5raKIqkPih" Bounds="265,359" Alignment="Top" />
+              <ControlPoint Id="Lcrtw0KTvvbPsVw55Au2c5" Bounds="281,467" Alignment="Bottom" />
+              <Patch Id="QPxIBef4S7IMVpi5mfVC24" ManuallySortedPins="true">
+                <Patch Id="POXLtQBHGnjLQGU6uatVxf" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="LZoZc20ENuKPeIwmjjKBtS" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="279,417,106,26" Id="DwuQKK28HOOOmw3kL3NWLH">
+                  <p:NodeReference>
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                    <CategoryReference Kind="ClassType" Name="State2OfIntelligentObject" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="GCXA6nZCScfNU0B1rnGLRW" Name="Mode Name" Kind="InputPin" />
+                  <Pin Id="Rd8GnGMm0QILlhalwff8jx" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pad Id="MulHtidfQTVMBUBnIRWTsG" Comment="" Bounds="326,380,35,15" ShowValueBox="true" isIOBox="true" Value="foo">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+              </Patch>
+            </Node>
+            <Pad Id="V7RE0eR9GT0QaR6P80XVJP" Comment="Condition" Bounds="83,301,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="RoYPd8ilBAOLFoXaJfHbMh" SlotId="NXZYG6h3VqqPMnLt0Rq0EA" Bounds="281,511" />
+            <!--
+
+    ************************ IStateOfIntelligentObject ************************
+
+-->
+            <Node Name="IStateOfIntelligentObject" Bounds="527,216" Id="GnNmxUrXgESQNMeJy1somv">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                <Choice Kind="InterfaceDefinition" Name="Interface" />
+              </p:NodeReference>
+              <Patch Id="BBMqDV0gqujO8RE7hk7UKm">
+                <Canvas Id="PcjEYfXbdAfLjjSjPYKwOu" CanvasType="Group">
+                  <ControlPoint Id="LY7itu87md7MQClGZ1RuwQ" Bounds="584,366" />
+                </Canvas>
+                <ProcessDefinition Id="GBBNsfhUiG2MYAfrkktszv" IsHidden="true">
+                  <Fragment Id="JcHRCO84fGUQYQJxDeGleq" Patch="GwaLdr6kMyjQX3gDj3sK6X" />
+                </ProcessDefinition>
+                <Patch Id="GwaLdr6kMyjQX3gDj3sK6X" Name="Split">
+                  <Pin Id="FLaV7DpxNRKN97BnZP8V5J" Name="Mode Name" Kind="OutputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                </Patch>
+                <Link Id="HuV7NzDlxImM6d4SObKC6y" Ids="LY7itu87md7MQClGZ1RuwQ,FLaV7DpxNRKN97BnZP8V5J" IsHidden="true" />
+              </Patch>
+            </Node>
+            <Node Bounds="285,539,104,26" Id="UFY83HmcvVcMuIa4QAZ00S">
+              <p:NodeReference LastCategoryFullName="Main.MyIntelligentObject.IStateOfIntelligentObject" LastSymbolSource="callmenames-2020-10-05.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="InterfaceTypeFlag" Name="IStateOfIntelligentObject" />
+                <Choice Kind="OperationCallFlag" Name="Split" />
+              </p:NodeReference>
+              <Pin Id="MGQXHIFn0MzLJGNfG5vPAF" Name="Input" Kind="StateInputPin" />
+              <Pin Id="VFZVDPi7CGmOIaYlLPimnJ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="AUgBa8sBjOdPoU1pg4TSRE" Name="Mode Name" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="Cia8JG4m3KvNaBdJM1OJ9k" Name="Create" ParticipatingElements="Gl1rsvyqjJhMBjebWRP6yI" />
+          <Patch Id="Hj0eKexZaP2P6DEXN98Vsj" Name="Update" />
+          <ProcessDefinition Id="VTnbmvfbN9VOgz3JrnDE26">
+            <Fragment Id="JQRwsMSClp8NrLcfLZCq4p" Patch="Cia8JG4m3KvNaBdJM1OJ9k" Enabled="true" />
+            <Fragment Id="M9N8YmdBIEpNUVN6REOi6C" Patch="Hj0eKexZaP2P6DEXN98Vsj" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="NXZYG6h3VqqPMnLt0Rq0EA" Name="State" />
+          <Link Id="Gl1rsvyqjJhMBjebWRP6yI" Ids="NrcQjl8O4lAPG5vz5zULbV,A73Kh6vnjpRMF91lQmWB1D" />
+          <Link Id="LY6SzZPzYMJNbSC9AG0Mxl" Ids="V7RE0eR9GT0QaR6P80XVJP,M9Y8GA3e8JxMYo4IC1nXa2" />
+          <Link Id="QI8qvT2tYngO1DXJWlHFO6" Ids="BHyVBAs8306L5raKIqkPih,Lcrtw0KTvvbPsVw55Au2c5" IsFeedback="true" />
+          <Link Id="KKfd1Tf6wZALopb7qbX0CZ" Ids="A73Kh6vnjpRMF91lQmWB1D,BHyVBAs8306L5raKIqkPih" />
+          <Link Id="QggWOzz0dpuNRrnbfNgRIo" Ids="Lcrtw0KTvvbPsVw55Au2c5,RoYPd8ilBAOLFoXaJfHbMh" />
+          <Link Id="OIUeIUayBj2LWuHNj4MMSK" Ids="Rd8GnGMm0QILlhalwff8jx,Lcrtw0KTvvbPsVw55Au2c5" />
+          <Link Id="FBwEK2Bng2ZNg73nFMdIsf" Ids="MulHtidfQTVMBUBnIRWTsG,GCXA6nZCScfNU0B1rnGLRW" />
+          <Link Id="SaentJmrDGePm6EPFN0jHr" Ids="RoYPd8ilBAOLFoXaJfHbMh,MGQXHIFn0MzLJGNfG5vPAF" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="HxwGQz7j6EuPlpAhV1zWwm">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="HcbSdrTtgt8OjRafD7FOu6">
+        <Canvas Id="GHrWYaaxitJOcNZ4iDPDw6" CanvasType="Group">
+          <Node Bounds="277,255,16,19" Id="IdEMVJ91Sf3MTtRh1Tw4BP">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="Strategy Pattern.vl">
+              <Choice Kind="ProcessNode" Name="MyIntelligentObject" />
+            </p:NodeReference>
+            <Pin Id="DvdLj90glHePTeuj1MZL0U" Name="Update" Kind="ApplyPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="CuNSBiOvFshPuYNQ5IQ8ur" Name="Create" />
+        <Patch Id="JyMvgbojiNQMzhp2ZZE9PM" Name="Update" />
+        <ProcessDefinition Id="KbPFThlIe4JLsDuRSnDsgk">
+          <Fragment Id="JvvNG8TCcAxMm69bP4Xekj" Patch="CuNSBiOvFshPuYNQ5IQ8ur" Enabled="true" />
+          <Fragment Id="TGozrABmDtxN2JYnWyHsUJ" Patch="JyMvgbojiNQMzhp2ZZE9PM" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="MALTrWbsqwwLXRvDXavzHE" Location="VL.Skia" Version="2020.2.2" />
+</Document>
